@@ -16,4 +16,7 @@ void Daifugo::start()
  // Réinitialisation de début de partie
 
  // Distribution des cartes
+
+ // Jusqu'à ce qu'il reste plus d'une personne avec des cartes
+ //   
 }
