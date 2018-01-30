@@ -1,7 +1,6 @@
 #ifndef RANDOM_GENERATOR_DEFINE 
 #define RANDOM_GENERATOR_DEFINE
 
-#include <iostream>
 #include <random>
 
 // https://diego.assencio.com/?index=6890b8c50169ef45b74db135063c227c
@@ -9,18 +8,19 @@
 class RandomGenerator
 {
  private:
-  std::mt19937 rng;
-  std::
+  std::random_device device;
+  std::mt19937 generator;
 
  public:
   RandomGenerator():
-   rng{std::random_device{}}
+   device(),
+   generator(device())
   {}
 
-  int get_random_int(int a, int b)
-  {
+  void set_random_seed() { generator.seed(device()); }
+  void set_seed(int new_seed) { generator.seed(new_seed); }
 
-  }
+  int get_random() { return generator(); }
 };
 
 #endif
