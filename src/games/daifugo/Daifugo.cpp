@@ -11,7 +11,9 @@ void Daifugo::add_player(Player &player)
 void Daifugo::start()
 ////////////////////////////////////////////////////////////////////////////
 {
- /* ((Erreur si moins de 2 joueurs))
-  * Distribution des cartes à chaque joueur
-  */
+ // Erreur si moins de 4 joueurs
+
+ // Réinitialisation de début de partie
+
+ // Distribution des cartes
 }

@@ -15,6 +15,8 @@ class Daifugo {
   Daifugo()
    {}
 
+  // Player handler
+  Player& get_player(int i) { return players[i].get(); }
   void add_player(Player &player);
 
   void start();
