@@ -3,6 +3,8 @@
 * Rules of Daifugo
 * Rules of Labyrinth (point A to point B)
 
+* Experimentation class, allow to keep trace of learning, win, etc...
+
 * Generic architecture for create neural network
 * Algorithm for gradient descent
   * Gradient computing
